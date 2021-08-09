@@ -84,6 +84,8 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+
+        PlayerInfo.instance.SaveScores();
     }
 
     public void OnBackButtonClick()
